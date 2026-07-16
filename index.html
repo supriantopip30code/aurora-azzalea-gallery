@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Lovely Daughters</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+    text-align:center;
+    margin:0;
+    padding:20px;
+}
+
+h1{
+    color:#e91e63;
+}
+
+.card{
+    max-width:400px;
+    margin:auto;
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+img{
+    width:100%;
+    border-radius:15px;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    background:#2196F3;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1976D2;
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+<h1>❤️ Aurora & Azzalea ❤️</h1>
+
+<img id="photo" src="foto-anak.jpg" alt="Foto Anak">
+
+<p id="caption">
+Aurora Nayumi Suprianto & Azzalea Nayumi Suprianto
+</p>
+
+<button onclick="gantiPesan()">
+Love ❤️
+</button>
+
+</div>
+
+<script>
+function gantiPesan(){
+    document.getElementById("caption").innerHTML =
+    "Semoga Aurora & Azzalea tumbuh sehat, bahagia, dan menjadi anak yang sholehah. ❤️";
+}
+</script>
+
+</body>
+</html>
