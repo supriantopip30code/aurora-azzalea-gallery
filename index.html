@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Aurora & Azzalea</title>
+
+<style>
+
+body{
+margin:0;
+padding:0;
+font-family:Arial,Helvetica,sans-serif;
+background:linear-gradient(to bottom,#fff7f8,#fdecec);
+text-align:center;
+color:#444;
+}
+
+header{
+padding:40px 20px 20px;
+}
+
+h1{
+font-size:38px;
+color:#d46a92;
+margin-bottom:5px;
+}
+
+h2{
+font-size:18px;
+font-weight:normal;
+color:#888;
+margin-top:0;
+}
+
+img{
+width:90%;
+max-width:450px;
+border-radius:25px;
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.card{
+background:white;
+width:90%;
+max-width:500px;
+margin:30px auto;
+padding:25px;
+border-radius:25px;
+box-shadow:0 5px 20px rgba(0,0,0,.12);
+}
+
+.age{
+font-size:28px;
+font-weight:bold;
+color:#e56b9f;
+}
+
+.footer{
+padding:30px;
+color:#777;
+}
+
+button{
+background:#e56b9f;
+color:white;
+border:none;
+padding:15px 35px;
+border-radius:40px;
+font-size:18px;
+cursor:pointer;
+}
+
+button:hover{
+opacity:.9;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>❤️ Aurora & Azzalea ❤️</h1>
+
+<h2>Our Little Miracles</h2>
+
+</header>
+
+<img src="images/F6838516-8F16-4435-B998-35615DEC8047.png">
+
+<div class="card">
+
+<h2>Welcome</h2>
+
+<p>
+Selamat datang di galeri digital Aurora Nayumi Suprianto
+dan
+Azzalea Nayumi Suprianto.
+</p>
+
+<div class="age" id="age"></div>
+
+<br>
+
+<button onclick="alert('Love You Aurora & Azzalea ❤️')">
+Love ❤️
+</button>
+
+</div>
+
+<div class="footer">
+
+Made with ❤️ by Papa
+
+</div>
+
+<script>
+
+const birth=new Date("2026-07-06");
+
+const today=new Date();
+
+const diff=today-birth;
+
+const days=Math.floor(diff/(1000*60*60*24));
+
+document.getElementById("age").innerHTML=
+
+days+" Days Old";
+
+</script>
+
+</body>
+</html>
