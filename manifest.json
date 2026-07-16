@@ -1,0 +1,9 @@
+{
+"name":"Aurora & Azzalea Gallery",
+"short_name":"Twins",
+"display":"standalone",
+"start_url":"./",
+"background_color":"#fff5f8",
+"theme_color":"#e76aa0",
+"icons":[]
+}

@@ -1,21 +1,5 @@
-const birthDate = new Date("2026-07-06");
-
-function updateAge() {
-
-    const today = new Date();
-
-    const diff = today - birthDate;
-
-    const days = Math.floor(diff / (1000*60*60*24));
-
-    const age = document.getElementById("age");
-
-    if(age){
-
-        age.innerHTML = days + " Days Old";
-
-    }
-
-}
-
-window.onload = updateAge;
+const b=new Date('2026-07-06');
+const d=Math.floor((Date.now()-b)/(1000*60*60*24));
+document.getElementById('age').textContent=d+' Days Old';
+document.getElementById('love').onclick=()=>alert('❤️ Papa loves Aurora & Azzalea ❤️');
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js');}
