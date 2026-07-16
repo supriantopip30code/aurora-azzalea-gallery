@@ -1,54 +1,338 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Aurora & Azzalea</title>
+<title>Aurora & Azzalea Gallery</title>
+
+<meta name="theme-color" content="#f7a8c6">
 
 <link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
 
 </head>
 
 <body>
 
-<header>
+<div class="background"></div>
 
-<h1>❤️ Aurora & Azzalea ❤️</h1>
+<header class="hero">
 
-<h2 class="subtitle">Our Little Miracles</h2>
+<div class="overlay">
+
+<h1>
+Aurora
+<span>&</span>
+Azzalea
+</h1>
+
+<p class="subtitle">
+Our Little Miracles
+</p>
+
+<p class="birthday">
+Born
+<br>
+6 July 2026
+</p>
+
+</div>
 
 </header>
 
-<img src="images/F6838516-8F16-4435-B998-35615DEC8047.png">
+<section class="cover-section">
+
+<img
+class="cover"
+src="images/F6838516-8F16-4435-B998-35615DEC8047.png"
+alt="Aurora & Azzalea">
+
+</section>
+
+<section class="welcome">
 
 <div class="card">
 
-<h2>Welcome</h2>
+<h2>
+Welcome
+</h2>
 
 <p>
-Selamat datang di galeri digital Aurora Nayumi Suprianto
-dan
+
+Selamat datang di album digital
+Aurora Nayumi Suprianto
+&
 Azzalea Nayumi Suprianto.
+
 </p>
 
-<div class="age" id="age"></div>
+<div id="age" class="age">
+Loading...
+</div>
 
-<br>
+<button id="loveButton">
 
-<button onclick="alert('Love You Aurora & Azzalea ❤️')">
-Love ❤️
+❤️ Love You
+
 </button>
 
 </div>
 
-<div class="footer">
+</section>
 
-Made with ❤️ by Papa
+<section class="gallery-title">
+
+<h2>
+
+Photo Gallery
+
+</h2>
+
+<p>
+
+Swipe untuk melihat semua foto.
+
+</p>
+
+</section>
+
+<div class="gallery">
+  <div class="photo">
+
+<img
+src="images/F6838516-8F16-4435-B998-35615DEC8047.png"
+alt="Cover">
 
 </div>
 
+<div class="photo">
+
+<img
+src="images/photo1.jpg"
+alt="Photo 1">
+
+</div>
+
+<div class="photo">
+
+<img
+src="images/photo2.jpg"
+alt="Photo 2">
+
+</div>
+
+<div class="photo">
+
+<img
+src="images/photo3.jpg"
+alt="Photo 3">
+
+</div>
+
+<div class="photo">
+
+<img
+src="images/photo4.jpg"
+alt="Photo 4">
+
+</div>
+
+<div class="photo">
+
+<img
+src="images/photo5.jpg"
+alt="Photo 5">
+
+</div>
+
+</div>
+
+<section class="family">
+
+<div class="card">
+
+<h2>
+
+👨‍👩‍👧‍👧 Family Memories
+
+</h2>
+
+<p>
+
+Every smile,
+every little hand,
+every little heartbeat,
+is a precious gift from Allah.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="counter">
+
+<div class="card">
+
+<h2>
+
+Together Since Birth
+
+</h2>
+
+<div id="daysCounter"
+class="big-counter">
+
+Loading...
+
+</div>
+
+<p>
+
+Days of happiness with Aurora & Azzalea ❤️
+
+</p>
+
+</div>
+
+</section>
+<section class="timeline">
+
+<div class="card">
+
+<h2>
+
+🌸 Milestones
+
+</h2>
+
+<div class="timeline-item">
+
+<div class="dot"></div>
+
+<div class="content">
+
+<h3>6 July 2026</h3>
+
+<p>
+Aurora & Azzalea were born.
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="dot"></div>
+
+<div class="content">
+
+<h3>First Smile</h3>
+
+<p>
+
+A beautiful memory to remember forever.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="dot"></div>
+
+<div class="content">
+
+<h3>Aqiqah</h3>
+
+<p>
+
+Family celebration with love.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="quote">
+
+<div class="card">
+
+<h2>
+
+❤️ A Message From Papa
+
+</h2>
+
+<p>
+
+May Allah always protect Aurora & Azzalea.
+
+May both of you grow healthy,
+be happy,
+become pious daughters,
+and bring happiness to everyone around you.
+
+Papa loves you forever.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+Made with ❤️ by Papa
+
+</p>
+
+</footer>
+
+<div id="floatingHearts"></div>
 <script src="app.js"></script>
-  
+
+<script>
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js');
+    });
+}
+
+const loveButton = document.getElementById("loveButton");
+
+if(loveButton){
+
+loveButton.addEventListener("click",()=>{
+
+loveButton.innerHTML="❤️ Papa Loves You ❤️";
+
+setTimeout(()=>{
+
+loveButton.innerHTML="❤️ Love You";
+
+},2000);
+
+});
+
+}
+
+</script>
+
 </body>
+
 </html>
